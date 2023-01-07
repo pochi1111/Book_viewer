@@ -1,0 +1,9 @@
+name: Official_book
+version: '${project.version}'
+main: test.official_book.official_book.Official_book
+api-version: 1.17
+commands:
+  official_book_open:
+    description: 公式配布bookを開きます
+    aliases:
+      - official_b
