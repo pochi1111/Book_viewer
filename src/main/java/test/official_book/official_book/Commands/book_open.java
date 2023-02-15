@@ -40,7 +40,7 @@ public class book_open implements CommandExecutor {
                 ItemStack book = new ItemStack(Material.WRITTEN_BOOK, 1);
                 BookMeta book_meta = (BookMeta) book.getItemMeta();
                 book_meta.setTitle(args[0]);
-                book_meta.setAuthor(ChatColor.GRAY + "Man10");
+                book_meta.setAuthor(ChatColor.GRAY + "匿名希望");
                 List<String> naiyou = plugin.getConfig().getStringList("books." + args[0]);
                 for (int i = 0; i < naiyou.size(); i++) {
                     book_meta.addPage(naiyou.get(i));
