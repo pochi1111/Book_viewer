@@ -50,7 +50,7 @@ public class book_open implements CommandExecutor {
                 return true;
 
             } else {
-                sender.sendMessage("[Man10BookViewer]" + ChatColor.RED + "その名前の本はありません!");
+                sender.sendMessage("[BookViewer]" + ChatColor.RED + "その名前の本はありません!");
             }
         }
         return true;
