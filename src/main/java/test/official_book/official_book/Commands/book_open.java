@@ -25,7 +25,7 @@ public class book_open implements CommandExecutor {
         if (args.length == 0) {
             List<String> book_titles = plugin.getConfig().getStringList("books.names");
             int gyousuu = book_titles.size() / 9 + 1;
-            Inventory inv = Bukkit.createInventory(null, gyousuu * 9, "[Man10-BookViewer]");
+            Inventory inv = Bukkit.createInventory(null, gyousuu * 9, "[BookViewer]");
             int amari = gyousuu * 9 - book_titles.size();
             for (int i = 0; i < book_titles.size(); i++) {
                 inv.addItem(createGuiItem(Material.BOOK, book_titles.get(i), ""));

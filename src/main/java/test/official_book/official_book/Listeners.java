@@ -13,7 +13,7 @@ import static test.official_book.official_book.Official_book.plugin;
 public class Listeners implements Listener {
     @EventHandler
     public void onInventoryClick(InventoryClickEvent event) {
-        if (event.getView().getTitle().equals("公式本")) {
+        if (event.getView().getTitle().equals("[BookViewer]")) {
             String item_name;
             event.setCancelled(true);
             item_name = event.getCurrentItem().getItemMeta().getDisplayName();
