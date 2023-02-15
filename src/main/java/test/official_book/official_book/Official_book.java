@@ -16,7 +16,7 @@ public final class Official_book extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(this.listeners, this);
 
         // Plugin startup logic
-        getCommand("book-viewer").setExecutor(new book_open());
+        getCommand("book_viewer").setExecutor(new book_open());
         super.onEnable();
         plugin.saveDefaultConfig();
     }
