@@ -1,9 +1,9 @@
-name: Official_book
+name: Book_viewer
 version: '${project.version}'
 main: test.official_book.official_book.Official_book
 api-version: 1.17
 commands:
-  official_book_open:
-    description: 公式配布bookを開きます
+  book_viewer:
+    description: 本一覧を開きます
     aliases:
-      - official_b
+      - book-v
